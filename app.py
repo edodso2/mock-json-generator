@@ -77,6 +77,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                 label="JSON Schema",
                 value=default_schema,
                 lines=15,
+                max_lines=15,
                 placeholder="Enter your JSON schema here...",
             )
 
@@ -84,7 +85,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
 
         with gr.Column():
             mock_output = gr.Textbox(
-                label="Generated Mock JSON", lines=15, interactive=False
+                label="Generated Mock JSON", lines=15, max_lines=15, interactive=False
             )
 
             error_output = gr.Textbox(label="Errors", visible=False, interactive=False)
