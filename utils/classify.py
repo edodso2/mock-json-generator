@@ -18,6 +18,7 @@ faker_functions = {
     "email address": fake.email,
     "phone number": fake.phone_number,
     "street address": fake.street_address,
+    "street": fake.street_address,
     "city name": fake.city,
     "state name": fake.state,
     "country name": fake.country,
@@ -71,7 +72,7 @@ def get_functions_for_descriptions(descriptions):
         dict: Mapping of descriptions to corresponding mock data functions
     """
     # Create pipeline with Facebook's BART model for zero-shot classification
-    pipe = pipeline(model="facebook/bart-large-mnli")
+    pipe = pipeline(model="MoritzLaurer/DeBERTa-v3-xsmall-mnli-fever-anli-ling-binary")
 
     # Call pipeline with descriptions and available Faker function labels
     result = pipe(descriptions, candidate_labels=list(faker_functions.keys()))

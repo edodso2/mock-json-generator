@@ -29,4 +29,6 @@ Using a Zero-Shot Classification model rather than a full LLM introduces a flexi
 
 ## Optimizations
 
-A custom-trained model would be ideal for a specific task like this.
+- more faker function mappings. for the current small model, more mappings for faker functions will most likely be needed.
+- custom-trained model. A targeted task like this should use a custom model.
+- custom extensions. For example specify a list of hobbies to randomly select during mock generation.

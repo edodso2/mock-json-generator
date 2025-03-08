@@ -5,3 +5,6 @@ faker
 torch
 jsonschema
 gradio
+tiktoken
+sentencepiece
+protobuf
