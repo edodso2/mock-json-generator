@@ -1,0 +1,7 @@
+python-dotenv
+huggingface-hub
+transformers
+faker
+torch
+jsonschema
+gradio
