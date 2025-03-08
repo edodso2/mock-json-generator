@@ -71,7 +71,7 @@ def get_functions_for_descriptions(descriptions):
     Returns:
         dict: Mapping of descriptions to corresponding mock data functions
     """
-    # Create pipeline with Facebook's BART model for zero-shot classification
+    # Create pipeline with small zero-shot classification model
     pipe = pipeline(model="MoritzLaurer/DeBERTa-v3-xsmall-mnli-fever-anli-ling-binary")
 
     # Call pipeline with descriptions and available Faker function labels
